@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ani Emmanuel Chukwuka | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel=stylesheet href="profile.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">ANI EMMANUEL</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <div class="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text" data-animate>
+        <div class="hero-tag">📍 Suleja, Nigeria · Open to Opportunities</div>
+        <h1 class="hero-name">Ani Emmanuel<br><span>Chukwuka</span></h1>
+        <div class="hero-title">Automotive Technician · Web Developer · Designer</div>
+        <p class="hero-desc">
+          A multidisciplinary professional who merges hands-on automotive expertise with digital craftsmanship — delivering excellence from the engine bay to the web browser.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary">💬 Get In Touch</a>
+          <a href="#skills" class="btn-outline">🔍 View My Skills</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap" data-animate>
+        <div class="hero-photo-ring">
+          <div class="ring-deco"></div>
+          <div class="hero-photo-inner">
+            <!-- Replace src with your actual image path -->
+            <img src="./IMG_20260425_013929_111.jpg" alt="Ani Emmanuel Chukwuka" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder" style="display:none;">AE</div>
+          </div>
+          <div class="badge badge-exp">
+            <div class="badge-dot" style="background:#f5a623;"></div>
+            2+ Yrs Experience
+          </div>
+          <div class="badge badge-skill">
+            <div class="badge-dot" style="background:#00d4ff;"></div>
+            4 Core Skills
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-animate>
+        <p>
+          I'm Ani Emmanuel Chukwuka, a passionate and versatile professional based in Suleja, Nigeria. I hold a strong foundation in automotive technology — specialising in electrical diagnostics and HVAC systems — with 2 years of practical experience at Dumez, Kaduna Road.
+        </p>
+        <p>
+          Beyond the workshop, I channel my creativity into graphic design and web development, building digital experiences that are both functional and visually compelling. I thrive at the intersection of technical precision and creative expression.
+        </p>
+        <p>
+          Currently pursuing my academic journey with matric number 2025/1/103734CT, I am dedicated to continuous growth across every discipline I engage with.
+        </p>
+      </div>
+      <div class="about-details" data-animate>
+        <div class="detail-row">
+          <span class="detail-icon">🆔</span>
+          <div>
+            <div class="detail-label">Matric Number</div>
+            <div class="detail-value">2025/1/103734CT</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">📍</span>
+          <div>
+            <div class="detail-label">Residential Address</div>
+            <div class="detail-value">APC Quarters 2, Suleja</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">🌍</span>
+          <div>
+            <div class="detail-label">State of Origin</div>
+            <div class="detail-value">Enugu State</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">📞</span>
+          <div>
+            <div class="detail-label">Phone</div>
+            <div class="detail-value">09150618907 · 07082056902</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">✉️</span>
+          <div>
+            <div class="detail-label">Email</div>
+            <div class="detail-value">chukwukaaniemmanuel@gmail.com</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">🎓</span>
+          <div>
+            <div class="detail-label">Availability</div>
+            <div class="detail-value">Open to freelance &amp; full-time roles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">What I Do</span>
+      <h2 class="section-title">Skills &amp; Expertise</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-animate data-bar="85">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">Graphic Design</div>
+        <div class="skill-desc">Creating compelling visual identities, branding materials, and digital graphics using modern design principles.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        <div class="skill-level">Advanced</div>
+      </div>
+      <div class="skill-card" data-animate data-bar="75">
+        <div class="skill-icon">💻</div>
+        <div class="skill-name">Web Development</div>
+        <div class="skill-desc">Building responsive, accessible, and performant websites using HTML, CSS, and JavaScript.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        <div class="skill-level">Intermediate–Advanced</div>
+      </div>
+      <div class="skill-card" data-animate data-bar="90">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Auto Electrical</div>
+        <div class="skill-desc">Diagnosing and repairing complex vehicle electrical systems, wiring harnesses, and electronic control units.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        <div class="skill-level">Expert</div>
+      </div>
+      <div class="skill-card" data-animate data-bar="88">
+        <div class="skill-icon">❄️</div>
+        <div class="skill-name">Automotive HVAC</div>
+        <div class="skill-desc">Servicing, diagnosing, and repairing automotive heating, ventilation, and air conditioning systems.</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        <div class="skill-level">Expert</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+<!-- TECH STACK -->
+<section id="tech">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">Tools &amp; Technologies</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="tech-grid" data-animate>
+      <div class="tech-pill"><div class="tech-pill-icon">🌐</div><div class="tech-pill-name">HTML5</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">🎨</div><div class="tech-pill-name">CSS3</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">⚙️</div><div class="tech-pill-name">JavaScript</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">📐</div><div class="tech-pill-name">Figma</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">🖌️</div><div class="tech-pill-name">Canva</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">📱</div><div class="tech-pill-name">Responsive Design</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">🔧</div><div class="tech-pill-name">Auto Diagnostics</div></div>
+      <div class="tech-pill"><div class="tech-pill-icon">🌡️</div><div class="tech-pill-name">HVAC Systems</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">Work History</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="exp-card" data-animate>
+      <div class="exp-timeline">
+        <div class="exp-dot"></div>
+        <div class="exp-line"></div>
+      </div>
+      <div>
+        <div class="exp-badge">2023 – 2025 · Full Time</div>
+        <div class="exp-role">Automotive Technician</div>
+        <div class="exp-company">Dumez</div>
+        <div class="exp-location">📍 Kaduna Road, Nigeria</div>
+        <ul class="exp-tasks">
+          <li>Performed advanced electrical diagnostics and fault-finding on a wide range of vehicles using diagnostic tools.</li>
+          <li>Repaired and overhauled automotive air conditioning and HVAC systems, ensuring optimal performance.</li>
+          <li>Serviced, inspected, and replaced wiring harnesses, fuses, alternators, and battery systems.</li>
+          <li>Collaborated with senior technicians to resolve complex multi-system failures efficiently.</li>
+          <li>Maintained accurate service records and communicated repair status clearly with clients.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-list" data-animate>
+      <div class="edu-card">
+        <div class="edu-icon">🏫</div>
+        <div>
+          <div class="edu-level">Primary School</div>
+          <div class="edu-school">Starlight International Academy</div>
+          <div class="edu-detail">Suleja, Niger State</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">✝️</div>
+        <div>
+          <div class="edu-level">Secondary School · BECE</div>
+          <div class="edu-school">Holy Angels Catholic College</div>
+          <div class="edu-detail">Nigeria</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">🔧</div>
+        <div>
+          <div class="edu-level">Technical College · WAEC</div>
+          <div class="edu-school">Technical College Obinagu Uwani Akpugo</div>
+          <div class="edu-detail">Nkanu West LGA, Enugu State</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-level">Tertiary Education · Current</div>
+          <div class="edu-school">Ongoing Academic Programme</div>
+          <div class="edu-detail">Matric No: 2025/1/103734CT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div data-animate>
+        <p class="contact-intro">
+          Whether you need automotive expertise, a fresh web presence, or compelling design work — I'm ready to bring value to your project. Let's talk.
+        </p>
+        <div class="contact-links">
+          <a href="tel:09150618907" class="contact-link">
+            <span class="contact-link-icon">📞</span>
+            <div>
+              <div style="font-size:0.75rem;color:var(--muted);margin-bottom:2px;">Primary Phone</div>
+              <div>09150618907</div>
+            </div>
+          </a>
+          <a href="tel:07082056902" class="contact-link">
+            <span class="contact-link-icon">📱</span>
+            <div>
+              <div style="font-size:0.75rem;color:var(--muted);margin-bottom:2px;">Secondary Phone</div>
+              <div>07082056902</div>
+            </div>
+          </a>
+          <a href="mailto:chukwukaaniemmanuel@gmail.com" class="contact-link">
+            <span class="contact-link-icon">✉️</span>
+            <div>
+              <div style="font-size:0.75rem;color:var(--muted);margin-bottom:2px;">Email</div>
+              <div>chukwukaaniemmanuel@gmail.com</div>
+            </div>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <span class="contact-link-icon">📍</span>
+            <div>
+              <div style="font-size:0.75rem;color:var(--muted);margin-bottom:2px;">Location</div>
+              <div>APC Quarters 2, Suleja, Nigeria</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-animate>
+        <div class="contact-form">
+          <input type="text" class="form-field" placeholder="Your Name" />
+          <input type="email" class="form-field" placeholder="Your Email" />
+          <input type="text" class="form-field" placeholder="Subject" />
+          <textarea class="form-field" rows="5" placeholder="Your Message"></textarea>
+          <button class="btn-primary" onclick="sendMessage()" style="width:100%;justify-content:center;">
+            📤 Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2026 <strong>Ani Emmanuel Chukwuka</strong> · All rights reserved</p>
+    <p style="margin-top:6px;">Built with HTML · CSS · JavaScript &nbsp;|&nbsp; Suleja, Nigeria</p>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" onclick="scrollToTop()">↑</button>
+<script src="profile.js"></script>
+</body>
+</html>
